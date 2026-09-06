@@ -8,8 +8,13 @@ import {
 
 const router = Router()
 
+// Public route for retrieving all tasks
 router.get('/', getTasks)
+
+// Protected route for creating a new task
 router.post('/', auth, createTask)
+
+// Protected route for deleting a task by its id
 router.delete('/:id', auth, deleteTask)
 
 export default router

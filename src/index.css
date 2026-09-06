@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.15);
+}
+
+button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #535bf2;
+}
+
+a {
+  color: #535bf2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.todo-card h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.todo-form input {
+  flex: 1;
+}
+
+.todo-form button {
+  flex-shrink: 0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  background: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.todo-row span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.delete-button {
+  background: #dc3545;
+}
+
+.delete-button:hover {
+  background: #bb2d3b;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-form button {
+  margin-top: 8px;
+}
+
+.auth-link {
+  margin-top: 8px;
+  text-align: center;
+  display: block;
+}
